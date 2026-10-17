@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilyes Saddi — Backend & AI Engineer</title>
+  <meta name="description" content="Portfolio of Ilyes Saddi — Final-year Computer Science Engineering student specializing in Backend Development and AI/ML. Seeking a 6-month graduation internship starting February 2027." />
+  <meta name="keywords" content="Ilyes Saddi, Backend Engineer, AI Engineer, Full Stack, Machine Learning, ASP.NET, React, Python" />
+  <meta property="og:title" content="Ilyes Saddi — Backend & AI Engineer" />
+  <meta property="og:description" content="Final-year CS Engineering student specializing in backend development and AI/ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+
+  <!-- Background Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">IS<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <!-- LEFT: text -->
+      <div class="hero-left-block">
+        <div class="hero-eyebrow reveal-up">Backend &amp; AI Engineer</div>
+        <div class="hero-badge reveal-up">Available for Internship · Feb 2027</div>
+        <h1 class="hero-name reveal-up">Ilyes<br/><span class="gradient-text">Saddi</span></h1>
+        <div class="hero-title reveal-up">
+          <span id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+        <p class="hero-desc reveal-up">
+          Final-year <strong>Computer Science Engineering</strong> student at ENSI (Bac+5),
+          specializing in backend development and applied AI/ML. Building scalable systems and AI-powered solutions.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#projects" class="btn-primary" id="hero-cta-work">View My Work</a>
+          <a href="#contact" class="btn-secondary" id="hero-cta-contact">Get In Touch</a>
+        </div>
+        <div class="hero-socials reveal-up">
+          <a href="mailto:ilyes.saddi@ensi-uma.tn" class="social-link" title="Email" id="hero-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ilyes-saddi-b296a919a/" target="_blank" class="social-link" title="LinkedIn" id="hero-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/IlyesSaddi" target="_blank" class="social-link" title="GitHub" id="hero-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://www.facebook.com/ilyes.saddi.2025/" target="_blank" class="social-link" title="Facebook" id="hero-facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="tel:+21658773731" class="social-link" title="Phone" id="hero-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- RIGHT: floating stat cards -->
+      <div class="hero-right-block reveal-right">
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">8+</div>
+          <div class="hero-stat-label">Projects Built</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">4</div>
+          <div class="hero-stat-label">Internships</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">2</div>
+          <div class="hero-stat-label">Awards Won</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">3+</div>
+          <div class="hero-stat-label">Years Coding</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="section section-light" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">01 · About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm a <strong>final-year Computer Science Engineering</strong> student at ENSI (Manouba, Tunisia),
+            pursuing a degree equivalent to a Master's (Bac+5). My core passion lies in designing and building
+            <strong>scalable backend systems</strong> and integrating <strong>AI-powered solutions</strong> into real-world applications.
+          </p>
+          <p>
+            I thrive at the intersection of software engineering and machine learning — from building
+            RESTful APIs with ASP.NET Core to fine-tuning multimodal AI models. I'm actively seeking a
+            <strong>6-month graduation internship (PFE)</strong> starting <strong>February 2027</strong>.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Backend Focused</span>
+            <span class="tag">AI Enthusiast</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </div>
+        <div class="about-stats reveal-right">
+          <div class="stat-card" id="stat-projects">
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card" id="stat-internships">
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-card" id="stat-awards">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+          <div class="stat-card" id="stat-years">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Timeline -->
+      <div class="education-block reveal-up">
+        <h3 class="sub-title">Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">09/2024 – Present</span>
+                <span class="timeline-location">Manouba, Tunisia</span>
+              </div>
+              <h4>National School for Computer Science (ENSI)</h4>
+              <p class="timeline-sub">Computer Science Engineering Degree</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">09/2022 – 07/2024</span>
+                <span class="timeline-location">Monastir</span>
+              </div>
+              <h4>Preparatory Institute for Engineering Studies of Monastir</h4>
+              <p class="timeline-sub">Math-Physics-Chemistry-MSI-IT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE ======= -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">02 · Experience</span>
+        <h2 class="section-title">Professional Journey</h2>
+      </div>
+      <div class="exp-timeline">
+
+        <div class="exp-item reveal-up" id="exp-acoba">
+          <div class="exp-line"></div>
+          <div class="exp-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">ACOBA</h3>
+                <p class="exp-role">Software Engineer Intern · <em>AI / Test Automation Developer</em></p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">08/2026 – 09/2026</span>
+                <span class="exp-location">Monastir (Remote)</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Built a backend test automation tool for the <strong>Cam2Drive</strong> web interface, using an LLM (Amazon Bedrock) to generate Playwright tests from user scenarios.</li>
+              <li>Developed a code retriever that maps a scenario to relevant files and functions, providing context to the LLM prompt.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">Amazon Bedrock</span>
+              <span class="exp-tag">Playwright</span>
+              <span class="exp-tag">LLM</span>
+              <span class="exp-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" id="exp-robotique">
+          <div class="exp-line"></div>
+          <div class="exp-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">ROBOTIQUE ENSI Association</h3>
+                <p class="exp-role">Project Lead · <em>Project Manager</em></p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">01/2025 – 01/2026</span>
+                <span class="exp-location">Manouba</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Led association projects, responsible for planning, coordination, and successful delivery of technical initiatives.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">Leadership</span>
+              <span class="exp-tag">Project Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" id="exp-devicespeak">
+          <div class="exp-line"></div>
+          <div class="exp-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">Device Speak</h3>
+                <p class="exp-role">Internship · <em>Full-Stack Developer</em></p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">07/2025 – 08/2025</span>
+                <span class="exp-location">Djerba</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed a <strong>full stack</strong> website using GraphQL API.</li>
+              <li>Built a real-time web application using <strong>React (Vite), Node.js, and MongoDB</strong>.</li>
+              <li>Integrated <strong>GraphQL APIs</strong> for a dynamic dashboard with efficient real-time data handling.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">React (Vite)</span>
+              <span class="exp-tag">Node.js</span>
+              <span class="exp-tag">MongoDB</span>
+              <span class="exp-tag">GraphQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" id="exp-solutionbe">
+          <div class="exp-line"></div>
+          <div class="exp-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">Solution BE</h3>
+                <p class="exp-role">Internship</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">07/2024 – 08/2024</span>
+                <span class="exp-location">Djerba</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Designed underground fiber routes using GPS for clients in <strong>Germany</strong>.</li>
+              <li>Managed technical equipment and machinery to ensure 100% operational success for client networks.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">GPS Mapping</span>
+              <span class="exp-tag">Network Engineering</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section class="section section-image-bg" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">03 · Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal-up" id="proj-energyprice">
+          <div class="project-top">
+            <div class="project-icon">⚡</div>
+            <div class="project-links">
+              <a href="#" class="project-link-icon" title="View Project" id="proj-energyprice-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-featured-badge">Featured · Ongoing</div>
+          <h3 class="project-title">Energy Price Guardian</h3>
+          <p class="project-sub">ASP.NET Core Web API</p>
+          <p class="project-desc">
+            A backend application using C#, ASP.NET Core Web API, and Entity Framework Core. Develops RESTful API endpoints with dependency injection and middleware. Integrates electricity price data to identify lower-cost hours for household energy consumption.
+          </p>
+          <div class="project-stack">
+            <span>C#</span><span>ASP.NET Core</span><span>Entity Framework</span><span>MySQL</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-chest">
+          <div class="project-top">
+            <div class="project-icon">🫁</div>
+            <div class="project-links">
+              <a href="#" class="project-link-icon" id="proj-chest-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Chest X-ray Disease Detection</h3>
+          <p class="project-sub">PCD · Medical AI</p>
+          <p class="project-desc">
+            Multi-label chest X-ray disease classification pipeline. Fine-tuned a <strong>MedGemma model</strong>, integrated <strong>CheXbert</strong> to validate labels. Uses PyTorch, PEFT (LoRA), MedGemma, and CheXbert.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>PyTorch</span><span>MedGemma</span><span>PEFT (LoRA)</span><span>Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-cam2drive">
+          <div class="project-top">
+            <div class="project-icon">🧪</div>
+          </div>
+          <h3 class="project-title">Cam2Drive Test Non-Regression</h3>
+          <p class="project-sub">Test Automation · LLM</p>
+          <p class="project-desc">
+            Automated test automation solution for the Cam2Drive interface. Develops a Code Retriever to identify relevant files, automatically generates <strong>Playwright tests</strong> based on code context and user scenarios, integrating an LLM with Amazon Bedrock.
+          </p>
+          <div class="project-stack">
+            <span>Playwright</span><span>Amazon Bedrock</span><span>LLM</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-ml">
+          <div class="project-top">
+            <div class="project-icon">🗳️</div>
+          </div>
+          <h3 class="project-title">Machine Learning Mini Project</h3>
+          <p class="project-sub">Voting Participation Prediction</p>
+          <p class="project-desc">
+            Supervised classification using demographic data. Applied data preprocessing, model training, and accuracy evaluation using Python with Pandas and Scikit-learn.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Classification</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-embedded">
+          <div class="project-top">
+            <div class="project-icon">🔐</div>
+          </div>
+          <h3 class="project-title">Secure Entry — Embedded System</h3>
+          <p class="project-sub">ESP32 · Raspberry Pi</p>
+          <p class="project-desc">
+            Automated security system using <strong>ESP32-CAM</strong> microcontrollers and a Raspberry Pi. Manages data through integrated memory using OpenCV for computer vision over MQTT/HTTP.
+          </p>
+          <div class="project-stack">
+            <span>ESP32</span><span>Raspberry Pi</span><span>OpenCV</span><span>Python</span><span>MQTT</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" id="proj-hotel">
+          <div class="project-top">
+            <div class="project-icon">🏨</div>
+          </div>
+          <h3 class="project-title">Hotel Management System</h3>
+          <p class="project-sub">C Developer</p>
+          <p class="project-desc">
+            Management platform using <strong>Linked Lists, Queues, and File Handling</strong> to automate room reservations and maintenance scheduling. Optimized data retrieval for real-time billing.
+          </p>
+          <div class="project-stack">
+            <span>C</span><span>Data Structures</span><span>File I/O</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="section section-light" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">04 · Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal-up" id="skills-languages">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">💻</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">C#</span>
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">C/C++</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up" id="skills-frameworks">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🛠️</span>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">ASP.NET Core</span>
+            <span class="pill">React (Vite)</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">GraphQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up" id="skills-databases">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">MongoDB</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up" id="skills-tools">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">⚙️</span>
+            <h3>Developer Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Git/GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Playwright</span>
+            <span class="pill">GraphQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up" id="skills-concepts">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🧩</span>
+            <h3>Software Concepts</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">OOP</span>
+            <span class="pill">SOLID Principles</span>
+            <span class="pill">Design Patterns</span>
+            <span class="pill">Data Structures</span>
+            <span class="pill">Algorithms</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal-up" id="skills-ml">
+          <div class="skill-group-header">
+            <span class="skill-group-icon">🤖</span>
+            <h3>ML & Deep Learning</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">PyTorch</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">Neural Networks</span>
+            <span class="pill">CNN</span>
+            <span class="pill">LSTM / RNN</span>
+            <span class="pill">Hugging Face</span>
+            <span class="pill">Prompt Engineering</span>
+            <span class="pill">LLMs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= AWARDS & ORGS ======= -->
+  <section class="section section-dark" id="awards">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">05 · Recognition</span>
+        <h2 class="section-title">Awards & Organisations</h2>
+      </div>
+      <div class="awards-grid">
+
+        <div class="award-card reveal-up" id="award-ml">
+          <div class="award-date">24/11/2025</div>
+          <div class="award-icon">🥈</div>
+          <h3 class="award-title">2nd Place — ML Competition</h3>
+          <p class="award-org">Orbyx ENSI Club</p>
+          <p class="award-desc">Developed predictive models using Python (Pandas, Scikit-learn) to solve complex data challenges.</p>
+        </div>
+
+        <div class="award-card reveal-up" id="award-robot">
+          <div class="award-date">27/04/2025</div>
+          <div class="award-icon">🥈</div>
+          <h3 class="award-title">2nd Place — Line Follower Competition</h3>
+          <p class="award-org">Robotek ISET Rades</p>
+          <p class="award-desc">Designed and optimized a high-speed autonomous robot using C++ and PID control algorithms to navigate complex tracks.</p>
+        </div>
+
+        <div class="award-card org-card reveal-up" id="org-scouts">
+          <div class="award-date">2022</div>
+          <div class="award-icon">⚜️</div>
+          <h3 class="award-title">Tunisian Scouts</h3>
+          <p class="award-org">Patrol Leader · Ajim Djerba Tunisia</p>
+          <p class="award-desc">Managed and mentored a group of scouts, coordinating weekly activities and outdoor expeditions.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">06 · Contact</span>
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+      <div class="contact-content reveal-up">
+        <p class="contact-lead">
+          I'm actively seeking a <strong>6-month graduation internship (PFE)</strong> starting <strong>February 2027</strong> in Backend Development or AI Engineering. Let's connect!
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:ilyes.saddi@ensi-uma.tn" class="btn-primary btn-large" id="contact-email-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            ilyes.saddi@ensi-uma.tn
+          </a>
+          <a href="tel:58773731" class="btn-secondary btn-large" id="contact-phone-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +216 58 773 731
+          </a>
+        </div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/ilyes-saddi-b296a919a/" target="_blank" class="contact-social" id="contact-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/IlyesSaddi" target="_blank" class="contact-social" id="contact-github">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.facebook.com/ilyes.saddi.2025/" target="_blank" class="contact-social" id="contact-facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by <strong>Ilyes Saddi</strong> · 2026</p>
+      <p class="footer-sub">Manouba, Tunisia · Available Feb 2027</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
